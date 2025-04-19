@@ -1,0 +1,265 @@
+/* Reset y reglas globales */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffcff585;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+
+/* Contenedor principal */
+.landing-container {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------- HEADER ---------------- */
+.landing-header {
+  height: 80px; /* o lo que estés usando */
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+.logo-img {
+  height: 100%;          /* usa el 100% de su contenedor */
+  max-height: 150px;      /* máximo sin romper el navbar */
+  width: auto;
+  object-fit: contain;
+  transform: scale(1.3); /* ¡esto agranda sin ocupar más espacio físico! */
+  transform-origin: left center;
+}
+
+
+.landing-highlight {
+  color: #f59e0b;
+}
+
+.landing-market {
+  font-size: 14px;
+  color: #888;
+  margin-left: 4px;
+}
+
+.landing-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.landing-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.landing-icons input {
+  padding: 6px 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ---------------- MAIN ---------------- */
+/* Imagen de fondo en toda la pantalla */
+.landing-hero-full {
+  background-image: url("../assets/shopping-girl.png");
+  background-size: cover;
+  background-position: center;
+  height: 810px;
+  width: 100%;
+  position: relative;
+}
+
+/* Capa intermedia opcional */
+.landing-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  position: relative;
+}
+
+/* Texto centrado verticalmente */
+.landing-text {
+  max-width: 600px;
+}
+
+.landing-text h1 {
+  font-size: 48px;
+  color: #047857;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.landing-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.landing-desc {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.shop-now {
+  background-color: #ec4899;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.more-info {
+  background-color: transparent;
+  color: #ec4899;
+  border: 2px solid #ec4899;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Descuento */
+.landing-discount {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #e11d48;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.shop-now {
+  background-color: #ec4899;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.more-info {
+  background-color: transparent;
+  color: #ec4899;
+  border: 2px solid #ec4899;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Descuento */
+.landing-discount {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #e11d48;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.shop-now {
+  background-color: #ec4899;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.more-info {
+  background-color: transparent;
+  color: #ec4899;
+  border: 2px solid #ec4899;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Imagen */
+.landing-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-width: 350px;
+}
+
+.landing-image img {
+  width: 45vw;
+  max-width: none;
+  height: auto;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.landing-discount {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: #e11d48;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* ---------------- FOOTER / PROMOS ---------------- */
+.landing-footer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 40px 60px 60px 60px;
+  flex-wrap: wrap;
+}
+
+.promo-box {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+  flex: 1;
+}
