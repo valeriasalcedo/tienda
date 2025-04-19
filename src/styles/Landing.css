@@ -5,7 +5,7 @@ html, body {
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffcff585;
+  background-color: #ffffff85;
 }
 
 *, *::before, *::after {
@@ -51,15 +51,15 @@ html, body {
 }
 
 .landing-market {
-  font-size: 14px;
+  font-size: 15px;
   color: #888;
   margin-left: 4px;
 }
 
 .landing-nav a {
-  margin: 0 15px;
+  margin: 0 0 0 250px;
   text-decoration: none;
-  color: #444;
+  color: #827c82;
   font-weight: 500;
 }
 
@@ -148,19 +148,6 @@ html, body {
   border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
-}
-
-/* Descuento */
-.landing-discount {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  background-color: #e11d48;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 999px;
-  font-weight: bold;
-  font-size: 14px;
 }
 
 
@@ -262,4 +249,45 @@ html, body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   min-width: 280px;
   flex: 1;
+}
+.user-menu {
+  position: relative;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  gap: 8px;
+}
+
+.user-dropdown a,
+.user-dropdown button {
+  color: #401f71;
+  font-weight: bold;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.user-dropdown a:hover,
+.user-dropdown button:hover {
+  text-decoration: underline;
+}
+
+.user-email {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #888;
 }

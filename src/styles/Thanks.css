@@ -1,0 +1,48 @@
+.thanks-page-container {
+    background-image: url("../assets/thanks.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 70px;
+    text-align: center;
+  }
+  
+  .thanks-content-box {
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  .thanks-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #e54683;
+    margin-bottom: 20px;
+  }
+  
+  .thanks-message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .thanks-back-button {
+    display: inline-block;
+    background-color: #ffffff00;
+    color: rgb(218, 83, 135);
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .thanks-back-button:hover {
+    background-color: #cdd5941e;
+  }
+  

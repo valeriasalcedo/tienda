@@ -1,0 +1,72 @@
+.landing-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .landing-header.scrolled {
+    height: 60px;
+    padding: 0 24px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  .logo-img {
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .landing-header.scrolled .logo-img {
+    transform: scale(0.85);
+  }
+  .user-menu {
+    position: relative;
+  }
+  
+  .user-dropdown {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    background: white;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    gap: 8px;
+  }
+  
+  .user-dropdown a,
+  .user-dropdown button {
+    color: #401f71;
+    font-weight: bold;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-dropdown a:hover,
+  .user-dropdown button:hover {
+    text-decoration: underline;
+  }
+  
+  .user-email {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #888;
+  }
+  

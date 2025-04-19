@@ -1,0 +1,89 @@
+.auth-container {
+    min-height: 100vh;
+    background: url('../assets/Auth.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .auth-card {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 2rem;
+    padding: 3rem 2.5rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .auth-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .auth-brand {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #b44cd2;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .auth-sub {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .auth-input {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #e1bee7;
+    border-radius: 1rem;
+    background: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border 0.3s ease;
+  }
+  
+  .auth-input:focus {
+    outline: none;
+    border-color: #b44cd2;
+  }
+  
+  .auth-button {
+    background: linear-gradient(135deg, #b44cd2, #f06292);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.9rem 1.2rem;
+    border-radius: 2rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-button:hover {
+    background: linear-gradient(135deg, #a13bbd, #ec407a);
+  }
+  
+  .auth-alt {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .auth-alt a {
+    color: #b44cd2;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .auth-alt a:hover {
+    text-decoration: underline;
+  }
+  

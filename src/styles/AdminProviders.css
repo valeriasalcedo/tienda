@@ -1,0 +1,98 @@
+.admin-providers {
+    padding: 120px 40px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .admin-providers h2 {
+    margin-bottom: 20px;
+    color: #4f46e5;
+  }
+  
+  .provider-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .provider-form input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .provider-form button {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .provider-form button:hover {
+    background-color: #4338ca;
+  }
+  
+  .provider-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .provider-table th,
+  .provider-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .provider-table th {
+    background-color: #f3f4f6;
+    color: #333;
+  }
+  
+  .provider-table td button {
+    padding: 6px 12px;
+    margin-right: 6px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  
+  .provider-table td .delete-btn {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .provider-table td button:hover {
+    opacity: 0.9;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: #4f46e5;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  

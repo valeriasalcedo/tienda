@@ -1,0 +1,138 @@
+.products-view {
+    display: flex;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    padding-top: 100px;
+  }
+  
+  .products-sidebar {
+    width: 260px;
+    padding: 40px 30px;
+    border-right: 1px solid #eaeaea;
+    background-color: #f9f9f9;
+  }
+  .product-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .filter-group {
+    margin-bottom: 40px;
+  }
+  
+  .filter-group h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .filter-group ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filter-group li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .products-main {
+    flex: 1;
+    padding: 40px 60px;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+  }
+  .product-card {
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+.product-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Parte superior de color */
+  .product-card-header {
+    height: 120px;
+    position: relative;
+  }
+  
+  /* Bookmark funcional */
+  .bookmark {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: white;
+    border-radius: 8px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease-in-out;
+    color: #6b7280;
+  }
+  
+  .bookmark.active {
+    background-color: #4f46e5;
+    color: white;
+  }
+  
+  /* Parte inferior */
+  .product-card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-card-body h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .product-card-body p {
+    margin: 6px 0 16px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .product-card-body button {
+    background-color: #6366f1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .product-card-body button:hover {
+    background-color: #4f46e5;
+  }
+  
+  /* Colores para fondo superior */
+  .color-1 { background: linear-gradient(to bottom, #a78bfa, #8b5cf6); }
+  .color-2 { background: linear-gradient(to bottom, #f472b6, #ec4899); }
+  .color-3 { background: linear-gradient(to bottom, #60a5fa, #3b82f6); }
+  .color-4 { background: linear-gradient(to bottom, #facc15, #eab308); }
+  .color-5 { background: linear-gradient(to bottom, #34d399, #10b981); }
